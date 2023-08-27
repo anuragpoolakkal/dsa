@@ -81,7 +81,7 @@ public class BinarySearch {
 
 
 **Ceiling** is the smallest element greater than or equal to target in a sorted array.
-To find ceiling in a sorted array, do binary search. As while loop's condition is `start <= end`, when the loop is broken start = end + 1. So, if target is found, return target. Otherwise, return `start` (instead of -1).
+To find ceiling in a sorted array, do binary search. As while loop's condition is `start <= end`, when the loop is broken, start = end + 1. So, if target is found, return target. Otherwise, return `start` (instead of -1).
 
 **Floor** is the greatest element smaller than or equal to target. Use the same method of ceiling, by returning `end` if target is not found.
 
