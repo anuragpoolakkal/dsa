@@ -1,7 +1,7 @@
-//same answer as find-peak-element (medium) qn
+// same answer to peak-index-in-a-mountain-array (easy) qn
 
 class Solution {
-    public int peakIndexInMountainArray(int[] arr) {
+    public int findPeakElement(int[] arr) {
         int start = 0, end = arr.length -1;
 
         while (start < end) {
