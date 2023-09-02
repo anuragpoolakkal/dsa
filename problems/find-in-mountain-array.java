@@ -3,10 +3,10 @@
 class Solution {
     int search(int[] arr, int target) {
         int peak = peakIndexInMountainArray(arr);
-        int firstTry = orderAgonisticBS(arr, target, start:0, peak);
+        int firstTry = orderAgonisticBS(arr, target, 0, peak);
         if (firstTry != -1) return firstTry;
         // if not found in first try, try to search on second half
-        return orderAgonisticBS(arr, target, start:peak+1, end:arr.length-1)
+        return orderAgonisticBS(arr, target, peak+1, arr.length-1)
     }
     
     public int peakIndexInMountainArray(int[] arr) {
@@ -51,6 +51,5 @@ class Solution {
             }
         }
         return -1;
-    }
     }
 }
