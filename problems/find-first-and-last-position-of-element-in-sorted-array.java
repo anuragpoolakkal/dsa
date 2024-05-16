@@ -7,7 +7,7 @@ class Solution {
             ans[1] = search(nums, target, false);
         }
 
-        return ans;
+        return ans; 
     }
 
     static int search(int[] nums, int target, boolean findStartIndex) {

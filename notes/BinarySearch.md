@@ -87,3 +87,5 @@ To find ceiling in a sorted array, do binary search. As while loop's condition i
 
 When finding ceiling, if target element is greater than the greatest number in the array, return -1.  
 `if (target > array.length) return -1;`
+
+
