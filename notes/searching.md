@@ -1,4 +1,50 @@
-# Binary Search
+# Searching
+
+#### Table of Contents
+
+1. [Linear Search](#linear-search)  
+2. [Binary Search](#binary-search)
+
+## Linear Search
+
+Searching algorithm
+
+### Time Complexity
+
+Best Case: O(1)  
+Worst Case: O(n)
+
+```java
+public class linearSearch
+{
+
+  public static void main (String args[])
+  {
+    int[] numbers = { 34, 322, 23, 34, 45, 67, 879, 89, 7, 88 };
+    int target = 89;
+    int ans = linearSearch(numbers, target);
+    System.out.println(ans);
+  }
+
+  static int linearSearch(int[] arr, int target)
+  {
+    if (arr.length == 0)
+      return -1;
+
+    for (int i = 0; i < arr.length; i++)
+      {
+	if (arr[i] == target)
+	  {
+	    return i;
+	  }
+      }
+      return -1;
+  }
+
+}
+```
+
+## Binary Search
 
 Binary searching needs sorted array.
 
@@ -79,7 +125,6 @@ public class BinarySearch {
 }
 ```
 
-
 **Ceiling** is the smallest element greater than or equal to target in a sorted array.
 To find ceiling in a sorted array, do binary search. As while loop's condition is `start <= end`, when the loop is broken, start = end + 1. So, if target is found, return target. Otherwise, return `start` (instead of -1).
 
@@ -88,4 +133,9 @@ To find ceiling in a sorted array, do binary search. As while loop's condition i
 When finding ceiling, if target element is greater than the greatest number in the array, return -1.  
 `if (target > array.length) return -1;`
 
+### Binary Search in Matrix
 
+Watch [video](https://youtu.be/enI_KyGLYPo?si=lLAI4pyyIX2K9xsW)
+
+1. [RowColMatrix.java](code/RowColMatrix.java)
+1. [SortedMatrix.java](code/SortedMatrix.java)
